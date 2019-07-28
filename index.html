@@ -1,1 +1,61 @@
-0x
+<html>
+    <head>
+        <title>0x Engineer</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Web page that talks about the frequently forgotten 0x engineer." />
+        <link rel="shortcut icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+        <link rel="shortcut icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+        <link rel="stylesheet" href="./m.css" />
+    </head>
+    <body>
+        <canvas id="background"></canvas>
+        <div style="position: absolute; top: 0; left: 0;">
+            <div class="row card">
+                <h1 class="col">The 0x Engineer</h1>
+            </div>
+            <div class="c">
+                
+                <div class="row">
+                    <div class="12 col">
+                        <p>You always hear about the 10x, 1x, even 100x engineers. But what about the 0x engineer?</p>
+                        <h3>An 0x Engineer...</h3>
+                        <ul>
+                            <li>Let's you know up front that they are using hexadecimal</li>
+                            <li>Can consume large amounts of <code>0xC0FFEE</code> to meet realistic deadlines</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="12 col" style="text-align: center; opacity: 0.5;">
+                        <a href="https://twitter.com/KrisSiegel" title="Kris Siegel's Twitter Account Link">@KrisSiegel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Google Analytics BS cause I'm curious if anyone actually visits this page -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53652415-7"></script>
+        <script>
+            // Google bullshit
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-53652415-7');
+
+            // My background bullshit
+            var background = document.getElementById("background");
+            var context = background.getContext("2d");
+            context.canvas.width = window.innerWidth;
+            context.canvas.height = window.innerHeight;
+
+
+        </script>
+    </body>
+</html>
